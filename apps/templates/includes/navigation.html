@@ -1,16 +1,96 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-absolute navbar-transparent">
             <div class="container-fluid">
-                <div class="navbar-wrapper">
-                    <div class="navbar-toggle d-inline">
-                        <button type="button" class="navbar-toggler">
-                            <span class="navbar-toggler-bar bar1"></span>
-                            <span class="navbar-toggler-bar bar2"></span>
-                            <span class="navbar-toggler-bar bar3"></span>
-                        </button>
-                    </div>
-                    <a class="navbar-brand" href="javascript:void(0)">Dashboard</a>
+                <div class="navbar-wrapper"> 
+
+                    <a class="navbar-brand" href="javascript:void(0)">Financial Dashboard</a>
                 </div>
+
+                                <!--updated header part from pavan-->
+                                <!-- New nav links and search bar with padding -->
+                            <nav class="nav-links" style="padding-left: 360px;">
+                                <button class="nav-button">
+                                    <a href="http://127.0.0.1:5000/index-data-metric-financial" class="nav-item">Data Metric</a>
+                                </button>
+                                <button class="nav-button">
+                                    <a href="http://127.0.0.1:5000/index-product-page-financial" class="nav-item">Products</a>
+                                </button>
+                                <button class="nav-button">
+                                    <a href="http://127.0.0.1:5000/index-order-page-financial" class="nav-item">Orders</a>
+                                </button>
+                                <button class="nav-button">
+                                    <a href="http://127.0.0.1:5000/index-report-financial" class="nav-item">Reports</a>
+                                </button>
+                            </nav>
+                    <!--
+                    <div class="search-bar flex-grow-1">    ##Add flex-grow-1 class
+                        <input type="text" id="search" class="form-control" placeholder="Search store locations...">
+                    </div>
+                    -->
+                    <!-- Additional CSS for styling -->
+                        <style>
+                            .nav-button {
+                                color: #090909;
+                                padding: 0.3em 1.5em;
+                                font-size: 18px;
+                                border-radius: 0.5em;
+                                margin: 0 20px;
+                                background: #e8e8e8;
+                                cursor: pointer;
+                                border: 1px solid #e8e8e8;
+                                transition: all 0.3s;
+                                box-shadow: 1px 1px 5px #891ade, -1px -1px 5px #b666f3;
+                            }
+
+                            .nav-button:active {
+                                color: #cecece;
+                                box-shadow: inset 1px 1px 5px #c5c5c5, inset -1px -1px 5px #ffffff;
+                            }
+
+                            .nav-button a {
+                                text-decoration: none;
+                                color: #090909;
+                            }
+
+                            .nav-button a:hover {
+                                text-decoration: none;
+                                color: #6400dd;
+                            }
+
+                            .search-bar {
+                                position: relative;
+                                flex-grow: 1; /* Allow search bar to fill available space */
+
+                            }
+
+                            .search-bar input {
+                                width: 100%; /* Ensure search input takes full width of search bar */
+                                padding: 5px;
+                                border-radius: 3px;
+                                border: 1px solid #ccc;
+                            }
+
+                            .autocomplete-results {
+                                position: absolute;
+                                background-color: white;
+                                border: 1px solid #ccc;
+                                max-height: 150px;
+                                overflow-y: auto;
+                                z-index: 1000;
+                                width: 100%;
+                            }
+
+                            .autocomplete-item {
+                                padding: 10px;
+                                cursor: pointer;
+                            }
+
+                            .autocomplete-item:hover {
+                                background-color: #f0f0f0;
+                            }
+                        </style>
+                        <!--end of pavan code-->
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -19,12 +99,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navigation">
                     <ul class="navbar-nav ml-auto">
+                        <!-- Remove the theme changer -->
+                        <!--
                         <li class="input-group d-flex align-items-center mb-0">
                             <label class="switch theme-switch">
                                 <input type="checkbox" class="bsc" checked="">
                                 <span class="slider"></span>
                             </label>
                         </li>
+                        -->
+                        <!-- Notifications -->
+                        <!--
                         <li class="search-bar input-group">
                             <button class="btn btn-link" id="search-button" data-toggle="modal"
                                     data-target="#searchModal"><i class="tim-icons icon-zoom-split"></i>
@@ -52,6 +137,7 @@
                                     one</a></li>
                             </ul>
                         </li>
+                        -->
                         <li class="dropdown nav-item">
                             <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                                 <div class="photo">
@@ -78,18 +164,4 @@
                 </div>
             </div>
         </nav>
-        <div class="modal modal-search fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModal"
-             aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="SEARCH">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <i class="tim-icons icon-simple-remove"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Navbar -->
         

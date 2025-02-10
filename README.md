@@ -8,33 +8,14 @@
 - ✅ `Up-to-date dependencies`
 - ✅ Black Dashboard, BS4 Design
 - ✅ `DB Tools`: SQLAlchemy ORM, `Flask-Migrate` (schema migrations)
-- ✅ `Persistence`: SQLite (dev), MySql (prod)
-- ✅ `Authentication`: Session Based, `OAuth` via Github
+- ✅ `Persistence`: Azure(PostgreSQL) (prod)
+- ✅ `Authentication`: Session Based, `OAuth` via Github / via Database(AZURE)
 - ✅ `Deployment`: Docker, Page Compression (Flask-Minify) 
 
-<br />
-
-## Table of Contents
-
-* [Demo](#demo)
-* [Docker Support](#docker-support)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
-
-<br />
 
 ## Demo
 
-> To authenticate use the default credentials ***test / pass*** or create a new user on the [registration page](https://www.creative-tim.com/live/black-dashboard-flask).
-
-- **Black Dashboard Flask** [Login Page](https://www.creative-tim.com/live/black-dashboard-flask)
+- **Data Vista Dashboard Flask** [Login Page](https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard/blob/main/media/datavistaloginpage.gif)
 
 <br />
 
@@ -43,8 +24,8 @@
 > Get the code
 
 ```bash
-$ git clone https://github.com/app-generator/black-dashboard-flask.git
-$ cd black-dashboard-flask
+$ git clone https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard.git
+$ cd Data-Vista-Data-Visualisation-Dashboard
 ```
 
 > Start the app in Docker
@@ -53,7 +34,7 @@ $ cd black-dashboard-flask
 $ docker-compose up --build 
 ```
 
-Visit `http://localhost:5085` in your browser. The app should be up & running.
+Visit `http://127.0.0.1:5000/` in your browser. The app should be up & running. [only possible after running the python commands]
 
 <br />
 
@@ -74,39 +55,6 @@ The meaning of each variable can be found below:
 ## Manual Build
 
 > UNZIP the sources or clone the private repository. After getting the code, open a terminal and navigate to the working directory, with product source code.
-
-### 👉 Set Up for `Unix`, `MacOS` 
-
-> Install modules via `VENV`  
-
-```bash
-$ virtualenv env
-$ source env/bin/activate
-$ pip3 install -r requirements.txt
-```
-
-<br />
-
-> Set Up Flask Environment
-
-```bash
-$ export FLASK_APP=run.py
-$ export FLASK_ENV=development
-```
-
-<br />
-
-> Start the app
-
-```bash
-$ flask run
-// OR
-$ flask run --cert=adhoc # For HTTPS server
-```
-
-At this point, the app runs at `http://127.0.0.1:5000/`. 
-
-<br />
 
 ### 👉 Set Up for `Windows` 
 
@@ -144,38 +92,11 @@ $ flask run --cert=adhoc # For HTTPS server
 
 At this point, the app runs at `http://127.0.0.1:5000/`. 
 
-<br />
-
-## Recompile SCSS  
-
-The SCSS/CSS files used to style the Ui are saved in the `apps/static/assets` directory. 
-In order to update the Ui colors (primary, secondary) this procedure needs to be followed. 
-
-```bash
-$ yarn # install modules
-$ # # edit variables 
-$ vi apps/static/assets/scss/black-dashboard/custom/_variables.scss 
-$ gulp # SCSS to CSS translation
-```
-
-The `_variables.scss` content defines the `primary` and `secondary` colors: 
-
-```scss
-$default:       #344675 !default; // EDIT for customization
-$primary:       #e14eca !default; // EDIT for customization
-$secondary:     #f4f5f7 !default; // EDIT for customization
-$success:       #00f2c3 !default; // EDIT for customization
-$info:          #1d8cf8 !default; // EDIT for customization
-$warning:       #ff8d72 !default; // EDIT for customization
-$danger:        #fd5d93 !default; // EDIT for customization
-$black:         #222a42 !default; // EDIT for customization
-```
-
-<br />
+---
 
 ## Documentation
 
-The documentation for the **Black Dashboard Flask** is hosted at our [website](https://demos.creative-tim.com/black-dashboard-flask/docs/1.0/getting-started/getting-started-flask.html).
+The documentation for the **Data Vista Dashboard Flask** is hosted at our [website](https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard/tree/main/Documentation)
 
 <br />
 
@@ -213,7 +134,7 @@ Within the download you'll find the following directories and files:
    |    |    |
    |    |    |-- accounts/                  # Authentication pages
    |    |    |    |-- login.html            # Login page | linked with the Database and its routing and functionality by Avilash
-   |    |    |    |-- register.html         # Register page
+   |    |    |    |-- register.html         # Register page by Avilash
    |    |    |
    |    |    |-- home/                      # UI Kit Pages
    |    |         |-- index-order-page-financial.html            # Index-order-page for financial || made by Malleswari and Balakumari
@@ -222,8 +143,8 @@ Within the download you'll find the following directories and files:
    |    |         |-- index-data-metric-page-sales.html               # index data metric for sales manager || made by Balakumari and Pradeep
    |    |         |-- index-product-page-financial.html            # Index-product-page for financial || made by Ritik , Accompanied by Dinakar
    |    |         |-- index-product-page-sales.html            # Index-product-page for sales || made by Prathiksha and satya || modified by Pranita
-   |    |         |-- index-report-financial.html               #
-   |    |         |-- index-report-sales.html                   #
+   |    |         |-- index-report-financial.html               # Last minute modifications and fixes by Ankit, Avilash, Mallweswari and Pranita 
+   |    |         |-- index-report-sales.html                   # Last minute modifications and fixes by Ankit, Avilash, Mallweswari and Pranita 
    |    |         |-- 404-page.html         # 404 page
    |    |         |-- *.html                # All other pages
    |    |    
@@ -238,49 +159,7 @@ Within the download you'll find the following directories and files:
    |-- ************************************************************************
 ```
 
-<br />
-
-## Browser Support
-
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
-
-<br />
-
-## Resources
-
-- Demo: <https://www.creative-tim.com/live/black-dashboard-flask>
-- Download Page: <https://www.creative-tim.com/product/black-dashboard-flask>
-- Documentation: <https://demos.creative-tim.com/black-dashboard-flask/docs/1.0/getting-started/getting-started-flask.html>
-- License Agreement: <https://www.creative-tim.com/license>
-- Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/black-dashboard-flask/issues)
-
-<br />
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the **Black Dashboard Flask**. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the **Black Dashboard Flask**. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser-specific, so specifying in what browser you encountered the issue might help.
-
-<br />
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us) instead of opening an issue.
-
-<br />
-
-## Licensing
-
-- Copyright 2019 - present [Creative Tim](https://www.creative-tim.com/)
-- Licensed under [Creative Tim EULA](https://www.creative-tim.com/license)
-
-<br />
+---
 
 ## Useful Links
 
@@ -293,12 +172,12 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Social Media
 
-- Twitter: <https://twitter.com/CreativeTim>
+- LinkedIn: <https://www.linkedin.com/in/avilash-bhowmick-497b24223>
 - Facebook: <https://www.facebook.com/CreativeTim>
-- Dribbble: <https://dribbble.com/creativetim>
-- Instagram: <https://www.instagram.com/CreativeTimOfficial>
+- Figma: <https://tiny.cc/Avilash_DesktopPortfolio>
+- Instagram: <https://www.instagram.com/desole_triste_prince>
 
 <br />
 
 ---
-[Black Dashboard Flask](https://www.creative-tim.com/product/black-dashboard-flask) - Provided by [Creative Tim](https://www.creative-tim.com/) and [AppSeed](https://appseed.us)
+[Data Vista Dashboard](https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard) - Made under the supervision and for internship purpose by [Infosys Springboard]

@@ -164,20 +164,18 @@ Within the download you'll find the following directories and files:
 ## Useful Links
 
 - [More products](https://www.creative-tim.com/bootstrap-themes) from Creative Tim
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new) (earn money)
+- [PPT](https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard/blob/main/media/final_presentation.mp4) from Data Vista Team
+- [Template](https://www.creative-tim.com/bootstrap-themes/free) from Creative Tim
 
 <br />
 
 ## Social Media
 
 - LinkedIn: <https://www.linkedin.com/in/avilash-bhowmick-497b24223>
-- Facebook: <https://www.facebook.com/CreativeTim>
 - Figma: <https://tiny.cc/Avilash_DesktopPortfolio>
 - Instagram: <https://www.instagram.com/desole_triste_prince>
 
 <br />
 
 ---
-[Data Vista Dashboard](https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard) - Made under the supervision and for internship purpose by [Infosys Springboard]
+[Data Vista Dashboard](https://github.com/AvilashBhowmick12/Data-Vista-Data-Visualisation-Dashboard) - Made under the supervision and for internship purpose by [Infosys Springboard]()
